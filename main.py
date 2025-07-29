@@ -1,11 +1,16 @@
+import os
 import discord, requests, discord_webhook
 from discord.ext import commands
 from discord_webhook import DiscordEmbed, DiscordWebhook
+
+TOKEN = os.getenv("MTM5NDc1Mzg0NzY5OTk2NDAwNQ.GBSvAE.jYmQd1CjOrKYJ3IrR6WrMezczDf9d_Z5MGdYVo")
 
 intents = discord.Intents.default()
 intents.message_content = True
 req = requests.Session()
 client = commands.Bot(command_prefix='.', intents=intents) #set prefix
+
+
 
 @client.event
 async def on_ready():
@@ -101,4 +106,4 @@ async def check(ctx, cookie):
   webhook.execute()
   
 
-client.run("MTM5NDc1Mzg0NzY5OTk2NDAwNQ.GA1j5Y.ptGDMqyXM4sFtMtfgu04cUi2XO8iYFqwuyyXWY") #replace with your bot token
+client.run(TOKEN)
