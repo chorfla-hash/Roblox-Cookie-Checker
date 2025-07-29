@@ -101,4 +101,4 @@ async def check(ctx, cookie):
   webhook.execute()
   
 
-client.run("MTM5NDc1Mzg0NzY5OTk2NDAwNQ.GMXeJ0.yqMWQDQ2BzpllnCRpGkHwMbOA6KFRbIhtZEDVo") #replace with your bot token
+client.run("MTM5NDc1Mzg0NzY5OTk2NDAwNQ.GA1j5Y.ptGDMqyXM4sFtMtfgu04cUi2XO8iYFqwuyyXWY") #replace with your bot token
